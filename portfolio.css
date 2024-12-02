@@ -1,0 +1,260 @@
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Days One", sans-serif;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.hero {
+  padding-top: 130px;
+}
+
+.hero img {
+  border-style: none;
+  border-radius: 70px;
+  margin: 0 auto;
+  max-width: 440px;
+  display: block;
+  width: 212px;
+  height: 216px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin: 30px 0px 100px;
+}
+
+.aboutme {
+  width: 90%;
+  max-width: 1100px;
+  height: auto;
+  text-align: center;
+  padding: 0px 50px 70px;
+  margin: 110px auto;
+}
+
+.aboutme-section {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+}
+
+.aboutme-image {
+  background: center;
+  width: 250px;
+  margin-right: 25px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-image: url(images/img.jpg);
+  background-size: cover;
+  background-position-x: 7px;
+  height: 250px;
+}
+
+.aboutme-text {
+  height: auto;
+  width: 40%;
+  margin-left: 40px;
+  text-align: left;
+}
+
+#projects {
+  padding: 5px;
+  margin: 5%;
+  width: 90%;
+  height: auto;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+}
+
+#projects h2 {
+  color: white;
+  margin: 36px 0;
+  font-size: 1.9rem;
+}
+
+.earth-project {
+  width: 400px;
+  height: 400px;
+  background: white;
+  position: relative;
+  border-radius: 10px;
+  background-image: url("images/news.jpg");
+  margin: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.bbc-project {
+  width: 400px;
+  height: 400px;
+  background: white;
+  position: relative;
+  border-radius: 10px;
+  background-image: url("images/e-commerce.jpg");
+  margin: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.text {
+  position: absolute;
+  height: 65px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: white;
+  overflow: hidden;
+  transition: 0.2s;
+  padding: 20px;
+}
+
+.text:hover {
+  height: 175px;
+  transition: 0.3s;
+}
+
+.text h3 {
+  margin-top: 3px;
+  color: black;
+  padding-bottom: 15px;
+}
+
+.content {
+  color: black;
+}
+
+.button {
+  border: 5px solid lightblue;
+  border-radius: 10px;
+  width: 160px;
+  margin-bottom: 100px;
+  margin-left: 10px;
+}
+
+.contact {
+  width: 100%;
+  height: auto;
+  padding: 75px 0 50px 0;
+  text-align: center;
+  background-color: rgba(3, 3, 3, 45%);
+}
+
+.contact p {
+  margin-bottom: 50px;
+}
+
+.contact h2,
+.contact p {
+  color: white;
+}
+
+.contact-form {
+  max-width: 800px;
+  display: flex;
+  text-align: left;
+  max-width: 1100px;
+  margin: 0 auto;
+  color: white;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.message textarea {
+  border-radius: 5px;
+  border: 0px;
+}
+
+.contact-details {
+  flex: 1;
+  margin-right: 50px;
+}
+
+.contact-details input {
+  width: 100%;
+  border-radius: 5px;
+  border: 0px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.message button {
+  color: #1d3d5f;
+  border: 0;
+  border-radius: 5px;
+  background: lightblue;
+  width: 140px;
+  height: 40px;
+  margin-top: 40px;
+  margin-left: auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.message button:hover {
+  background: black;
+  color: white;
+  transition: 0.2s;
+}
+
+footer {
+  height: 90px;
+  background-color: #1f2027;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.social-media {
+  font-size: 200%;
+  width: auto;
+  margin-left: auto;
+}
+
+.social-media a i {
+  color: white;
+  transition: 0.2s;
+}
+
+.social-media a i:hover {
+  color: lightblue;
+  transition: 0.2;
+}
+
+.copyright {
+  color: white;
+}

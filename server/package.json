@@ -1,0 +1,18 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "index.js"
+  },
+  "author": "Udit Singh",
+  "license": "ISC",
+  "description": "Basic server for storing form data",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "json": "^11.0.0",
+    "stringify": "^5.2.0"
+  }
+}

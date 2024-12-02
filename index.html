@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Udit - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="normalize.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Days+One&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="portfolio.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        top: 0vw;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+      }
+      nav ul li a:hover {
+        color: rgb(188, 80, 188);
+        font-size: 1.01rem;
+      }
+
+      main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 60px 84px;
+      }
+
+      hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 0 84px;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 80px 0;
+      }
+      .firstSection > div {
+        width: 30%;
+      }
+      .leftSection {
+        font-size: 3rem;
+      }
+      .leftSection .buttons {
+        padding: 50px 0;
+      }
+      .leftSection .btn {
+        padding: 12px;
+        font-size: 20px;
+        background: #1e2167;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      .leftSection {
+        font-size: 3rem;
+        width: 45% !important;
+      }
+      .rightSection img {
+        width: 80%;
+        margin: 50px 0;
+      }
+      .shade {
+        color: rgb(167, 109, 222);
+      }
+
+      .text-gray {
+        color: gray;
+        display: flex;
+        justify-content: center;
+      }
+      #element {
+        color: rgb(167, 109, 222);
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+
+      .secondSection .box {
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 7.9vw;
+      }
+      .image-top {
+        width: 32px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+        font-size: 14px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 86px;
+        color: gray;
+        width: 150px;
+        font-size: 11px;
+      }
+      footer {
+        background-color: #0e0e1a;
+      }
+      .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+      .footer ul {
+        list-style: none;
+      }
+
+      .footer > div {
+        width: 223px;
+      }
+
+      .text-center {
+        text-align: center;
+        color: gray;
+        padding: 12px 0;
+      }
+
+      .github-link {
+        color: white;
+      }
+      .btn:hover {
+        background-color: black;
+      }
+      .text-body{
+        height: 100px;
+        padding: 10px;
+      }
+      @media screen and (max-width: 1400px) {
+        .firstSection {
+          flex-direction: column-reverse;
+        }
+        .box {
+          flex-direction: column;
+        }
+        .secondSection .vertical {
+          height: unset;
+        }
+        .secondSection .box {
+          width: 80vw;
+        }
+        .vertical-title,
+        .vertical-desc {
+          font-size: 1.2rem;
+          width: 60vw;
+          left: 13vw;
+          top: -1vw;
+        }
+
+        nav {
+          flex-direction: column;
+        }
+        .leftSection {
+          width: 100% !important;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .typed-cursor {
+          display: none;
+        }
+        .rightSection {
+          width: 721px !important;
+          display: flex;
+          justify-content: center;
+        }
+        .rightSection img {
+          width: 45vw;
+        }
+        .secondSection {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        body {
+          min-width: fit-content;
+        }
+        .image-top {
+          top: 10vw;
+          left: -11vw;
+        }
+        .hide {
+          display: none;
+        }
+        hr {
+          margin: 100px 84px;
+        }
+        .contact {
+          display: none;
+        }
+        .earth-project{
+          width: 270px;
+          height: 270px;
+        }
+        .bbc-project{
+          width: 270px;
+          height: 270px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Udit's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#aboutme">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li class="hide"><a href="#contactme">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          <div class="center-text">
+            Hi,My Name is <span class="shade center-text">Udit</span>
+          </div>
+          <div class="center-text ">and I am a passionate</div>
+          <div class="text-body"> <span id="element"></span></div>
+         
+
+          <div class="buttons">
+            <button class="btn">
+              <a
+                class="github-link"
+                href="UDIT_SINGH_RESUME (4).pdf"
+                download="Udit_Singh_Resume"
+                >Download Resume</a
+              >
+            </button>
+
+            <button class="btn">
+              <a href="https://github.com/Udit772" class="github-link"
+                >Visit Github</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="rightSection"><img src="bg.png" alt="" /></div>
+      </section>
+      <hr id="aboutme" />
+      <section class="aboutme">
+        <h2>About me</h2>
+        <div class="aboutme-section">
+          <div class="img">
+            <div class="aboutme-image"></div>
+          </div>
+          <div class="aboutme-text">
+            <p>
+              Hi there! I’m Udit Singh, an enthusiastic and dedicated Full Stack
+              Developer with a passion for building innovative web applications.
+              I’m excited to leverage my skills and knowledge to contribute to
+              meaningful projects and grow in the tech industry.
+            </p>
+            <!-- <p>
+              I'm familiar with HTML5, CSS3, JavaScript, PHP7 and MySQL.
+              Checkout some of the projects I've done below.
+            </p> -->
+          </div>
+        </div>
+      </section>
+      <hr id="work" />
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far </span>
+        <h1>Work Experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="code.png" alt="" />
+            <div class="vertical-title">CodeAlpha</div>
+            <div class="vertical-desc">
+              I developed a personal portfolio website to showcase my skills,
+              projects, and professional journey.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="code.png" alt="" />
+            <div class="vertical-title">Oasis InfoByte</div>
+            <div class="vertical-desc">
+              I developed interactive and user-friendly web applications,
+              including a to-do list and a calculator.
+            </div>
+          </div>
+          <div class="vertical hide">
+            <img class="image-top" src="coding.png" alt="" />
+            <div class="vertical-title"><i class="fa fa-user"></i></div>
+            <div class="vertical-desc"></div>
+          </div>
+          <div class="vertical hide">
+            <img class="image-top hide" src="coding.png" alt="" />
+            <div class="vertical-title"><i class="fa fa-user"></i></div>
+            <div class="vertical-desc"></div>
+          </div>
+          <div class="vertical hide">
+            <img class="image-top" src="coding.png" alt="" />
+            <div class="vertical-title"><i class="fa fa-user"></i></div>
+            <div class="vertical-desc"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <hr id="project" />
+
+    <section id="projects">
+      <div class="project">
+        <h2>Projects</h2>
+        <div class="projects">
+          <div class="earth-project">
+            <div class="text">
+              <h3 class="project-name">NewsNow</h3>
+              <div class="content">
+                <p>
+                  Stay updated with real-time news from diverse sources, all in one place.
+                </p>
+              </div>
+
+              <a class="button" href="" target="_bank">View Project</a>
+            </div>
+          </div>
+
+          <div class="bbc-project">
+            <div class="text">
+              <h3 class="project-name">ShopSphere</h3>
+              <div class="content">
+                <p>
+                  Your all-in-one destination for seamless and secure online shopping.
+                </p>
+              </div>
+
+              <a class="button" href="" target="_bank">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contactme" class="contact">
+      <h2>Contact</h2>
+      <p>Use this form to get in touch.</p>
+
+      <form class="contact-form" id="myForm">
+        <!-- action="http://localhost:5500/submit-form"
+        method="POST" -->
+        <div class="contact-details">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Yourname" name="name" />
+
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            placeholder="Reason for your message"
+            name="subject"
+          />
+
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Your email address"
+            name="email"
+          />
+        </div>
+
+        <div class="message">
+          <label for="msg">Message</label>
+          <textarea id="msg" rows="15" name="message"></textarea>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="copyright">This site &copy; 2024 Udit Singh</div>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/udit-singh-csit/"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Java Developer", "Full-Stack Developer"],
+        typeSpeed: 50,
+        backSpeed: 20,
+
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
